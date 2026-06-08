@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import syedImage from "../assets/syed.png";
 
 function Hero() {
   return (
@@ -9,7 +10,6 @@ function Hero() {
       <div className="container">
         <div className="row align-items-center hero-row">
 
-          {/* LEFT SIDE */}
           <div className="col-lg-4">
             <motion.h1
               className="hero-title"
@@ -19,18 +19,12 @@ function Hero() {
             >
               Build
               <br />
-
-              <span className="outline-text">
-                Shopify
-              </span>
-
+              <span className="outline-text">Shopify</span>
               <br />
-
               Success
             </motion.h1>
           </div>
 
-          {/* CENTER IMAGE */}
           <div className="col-lg-4">
             <motion.div
               className="hero-image"
@@ -39,13 +33,12 @@ function Hero() {
               transition={{ duration: 1 }}
             >
               <img
-                src={`${import.meta.env.BASE_URL}syed.png`}
+                src={syedImage}
                 alt="Syed Hammad"
               />
             </motion.div>
           </div>
 
-          {/* RIGHT SIDE */}
           <div className="col-lg-4">
             <motion.div
               initial={{ opacity: 0, x: 60 }}
@@ -73,17 +66,11 @@ function Hero() {
               </p>
 
               <div className="hero-buttons">
-                <a
-                  href="#projects"
-                  className="btn-main"
-                >
+                <a href="#projects" className="btn-main">
                   View Projects
                 </a>
 
-                <a
-                  href="#contact"
-                  className="btn-outline-custom"
-                >
+                <a href="#contact" className="btn-outline-custom">
                   Hire Me
                 </a>
               </div>
@@ -92,9 +79,7 @@ function Hero() {
 
         </div>
 
-        {/* STATS */}
         <div className="row stats-row">
-
           <div className="col-md-4">
             <div className="stat-box">
               <h3>7000+</h3>
@@ -115,8 +100,8 @@ function Hero() {
               <p>Hours Saved Through Automation</p>
             </div>
           </div>
-
         </div>
+
       </div>
     </section>
   );
