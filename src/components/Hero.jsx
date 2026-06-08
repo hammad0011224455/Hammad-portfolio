@@ -3,17 +3,14 @@ import { motion } from "framer-motion";
 function Hero() {
   return (
     <section id="home" className="hero-section">
-
       <div className="glow glow-1"></div>
       <div className="glow glow-2"></div>
 
       <div className="container">
-
         <div className="row align-items-center hero-row">
 
           {/* LEFT SIDE */}
           <div className="col-lg-4">
-
             <motion.h1
               className="hero-title"
               initial={{ opacity: 0, x: -60 }}
@@ -31,12 +28,10 @@ function Hero() {
 
               Success
             </motion.h1>
-
           </div>
 
           {/* CENTER IMAGE */}
           <div className="col-lg-4">
-
             <motion.div
               className="hero-image"
               initial={{ opacity: 0 }}
@@ -44,22 +39,19 @@ function Hero() {
               transition={{ duration: 1 }}
             >
               <img
-                src="/syed.png"
+                src={`${import.meta.env.BASE_URL}syed.png`}
                 alt="Syed Hammad"
               />
             </motion.div>
-
           </div>
 
           {/* RIGHT SIDE */}
           <div className="col-lg-4">
-
             <motion.div
               initial={{ opacity: 0, x: 60 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-
               <span className="hero-tag">
                 SHOPIFY DEVELOPER • REACT • UK
               </span>
@@ -81,7 +73,6 @@ function Hero() {
               </p>
 
               <div className="hero-buttons">
-
                 <a
                   href="#projects"
                   className="btn-main"
@@ -95,17 +86,13 @@ function Hero() {
                 >
                   Hire Me
                 </a>
-
               </div>
-
             </motion.div>
-
           </div>
 
         </div>
 
         {/* STATS */}
-
         <div className="row stats-row">
 
           <div className="col-md-4">
@@ -130,9 +117,7 @@ function Hero() {
           </div>
 
         </div>
-
       </div>
-
     </section>
   );
 }
